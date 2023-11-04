@@ -261,8 +261,8 @@ var VanillaTilt = (function () {
         let angle = Math.atan2(this.event.clientX - (this.left + this.width / 2), -(this.event.clientY - (this.top + this.height / 2))) * (180 / Math.PI);
     
         return {
-          tiltX: tiltX / 5,
-          tiltY: tiltY / 5,
+          tiltX: tiltX,
+          tiltY: tiltY,
           percentageX: x * 100,
           percentageY: y * 100,
           angle: angle
