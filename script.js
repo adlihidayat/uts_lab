@@ -1,6 +1,6 @@
 var typed = new Typed('#title', {
     strings: ['Seputar mengenai Presiden <span class="span">Indonesia</span>', 'Seputar mengenai Presiden <span class="span">Indonesia</span>'],
     typeSpeed: 100,
-    backSpeed : 100,
-    looped: true,
+    backSpeed : 50,
+    loop: true,
 });
