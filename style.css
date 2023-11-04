@@ -46,7 +46,7 @@ body {
 }
 
 .hero {
-  padding-block-start: 70px;
+  margin-top: 50px;
 }
 
 .hero-bg {
@@ -75,7 +75,6 @@ body {
   margin-block-end: 30px;
   font-size: 80px;
 }
-
 .hero-title .span {
   display: inline-block;
   color: red;
@@ -92,7 +91,7 @@ body {
 }
 
 .about {
-  padding: 90px 7% 20px;
+  padding: 90px 10% 90px;
 }
 
 .about-content h2 {
@@ -106,6 +105,7 @@ body {
 
 .about .container {
   display: flex;
+  align-items: center;
 }
 
 .about-img img {
@@ -134,17 +134,17 @@ body {
   padding: 50px 0px 50px 0px;
 }
 
-.nav-text:hover{
-  color: white; 
+.nav-text:hover {
+  color: white;
   transition-duration: 300ms;
 }
 
-.more{
+.more {
   text-decoration: none;
 }
 
 .more:hover {
   background-color: #ad1a1af2;
-  color: rgb(231, 231, 231); 
+  color: rgb(231, 231, 231);
   transition-duration: 300ms;
 }
