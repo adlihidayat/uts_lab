@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>President</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .m-t-a{
+        margin-top: 100px;
+      }
+    </style>
+</head>
+<body class="overflow-x-hidden" style="display: flex; flex-direction: column; align-items: center;">
+
+    <!--Navbar-->
+    <nav class="navbar z-3" style="z-index: 5;">
+      <a href="#" class="navbar-logo">PresidenKu</a>
+      <div class="navbar-nav d-flex flex-row">
+        <a href="#hero" class="nav-text">Beranda</a>
+        <a href="#about" class="nav-text">Tentang Kami</a>
+      </div>
+    </nav>
+    
+
+    <!--Home-->
+    <section id="imgMain" class="z-0 w-75 section overflow-hidden heromt-5" aria-label="hero" style="margin-top: 150px;">
+      <div class="container">
+        <div class="hero-bg rounded-5 overflow-hidden">
+          <div class="hero-content">
+            <h1 class="h1 hero-title" id="title" style="height: 200px;">
+              Seputar mengenai Presiden <span class="span">Indonesia</span>
+            </h1>
+            <a href="/explore.html" class="hero-text more" >Selengkapnya</a>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <section id="about" class="about mb-5">
+      <div class="container">
+        <div class="about-img">
+          <img src="img/batmeow.jpeg" width="380" height="500" alt="Tentang Kami">
+        </div>
+        <div class="about-content mx-5">
+          <h2 class="mb-5"><span>Tentang</span> Kami</h2>
+          <p class="mb-4">
+            Negara Republik Indonesia telah berusia lebih dari setengah abad dan sudah pernah dipimpin 
+            oleh lebih dari lima presiden yang masing-masing mempunyai sejarah dan latar belakang politis,
+            dan gaya kepemimpinan yang berbeda. Fakta dan peristiwa yang berkaitan dengan para Presiden RI dan
+            masa pemerintahannya terekam dalam berbagai bentuk bahan pustaka, baik tercetak maupun rekam.
+          </p>
+          <p>
+            Kami adalah sumber informasi untuk semua yang ingin mengetahui lebih banyak tentang 
+            para presiden Indonesia dan sejarah kepemimpinan mereka. Melalui website kami, pengunjung 
+            akan menemukan koleksi lengkap cerita, profil, dan ulasan sejarah lengkap mengenai semua 
+            presiden Indonesia yang pernah memimpin negara ini. Kami berkomitmen untuk menjadi rujukan 
+            yang informatif dan terpercaya bagi siapa pun yang ingin mengeksplorasi jejak kepemimpinan 
+            presiden-presiden Indonesia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact w-100">
+      <div class="footer ">
+        <p class=" text-white">
+          &copy; 2023. Ucup dan Adli. All Right Reserved.
+        </p>
+      </div>
+    </section>
+    <script src="/script.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.getElementById("imgMain"), {
+        max: 25,
+        speed: 400
+      });
+      
+      //It also supports NodeList
+      VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
+</body>
+
+</html>

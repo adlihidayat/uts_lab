@@ -1,0 +1,150 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  border: none;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #810000f2;
+  align-items: center;
+  padding: 10px 7%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-logo {
+  font-size: 35px;
+  font-weight: 800;
+  color: #eeebdd;
+  font-style: italic;
+}
+
+.navbar-nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 8px;
+}
+
+.navbar-nav a:hover {
+  color: #350202;
+  transition: 0.2s linear;
+}
+
+.hero {
+  padding-block-start: 70px;
+}
+
+.hero-bg {
+  background-image: url("img/yang-bener2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  min-height: 110 vh;
+}
+
+.hero-content {
+  padding-block: 180px;
+  padding-inline: 40px;
+  display: block;
+  grid-template-columns: 1fr;
+  place-content: center;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 60rem;
+  margin-inline: auto;
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  margin-block-end: 30px;
+  font-size: 80px;
+}
+
+.hero-title .span {
+  display: inline-block;
+  color: red;
+}
+
+.hero-text {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  color: rgb(255, 249, 249);
+  background-color: #810000f2;
+  border-radius: 16px;
+}
+
+.about {
+  padding: 90px 7% 20px;
+}
+
+.about-content h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.about-content h2 span {
+  color: #d80b0bf2;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-img img {
+  border-radius: 16px;
+  border: solid 5px;
+}
+
+.about-content {
+  padding: 0 15px;
+  margin-block: 60px;
+}
+
+.about-content p {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  background-color: #810000f2;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.nav-text:hover{
+  color: white; 
+  transition-duration: 300ms;
+}
+
+.more{
+  text-decoration: none;
+}
+
+.more:hover {
+  background-color: #ad1a1af2;
+  color: rgb(231, 231, 231); 
+  transition-duration: 300ms;
+}
