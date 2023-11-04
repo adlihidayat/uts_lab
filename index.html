@@ -31,10 +31,10 @@
     <!--Home-->
     <section id="imgMain" class="z-0 w-75 section overflow-hidden heromt-5" aria-label="hero" style="margin-top: 150px;">
       <div class="container">
-        <div class="hero-bg rounded-5 overflow-hidden">
+        <div class="hero-bg" style="border-radius: 20px;">
           <div class="hero-content">
-            <h1 class="h1 hero-title" id="title" style="height: 200px;">
-              Seputar mengenai Presiden <span class="span">Indonesia</span>
+            <h1 class="h1 hero-title title-main" id="title" style="height: 200px;">
+              
             </h1>
             <a href="/explore.html" class="hero-text more" >Selengkapnya</a>
           </div>
@@ -74,16 +74,17 @@
         </p>
       </div>
     </section>
+
+   
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="/script.js"></script>
+
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
       VanillaTilt.init(document.getElementById("imgMain"), {
         max: 25,
         speed: 400
       });
-      
-      //It also supports NodeList
-      VanillaTilt.init(document.querySelectorAll(".your-element"));
     </script>
 </body>
 
