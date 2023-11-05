@@ -8,105 +8,627 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .bg-red{
-            background-color: #810000;
+          background-color: #810000;
         }
         .button-to{
-            text-decoration: none;
-            padding: 5px 15px;
-            border-radius: 5px;
-            color: black;
-            background-color: rgb(219, 226, 10);
-            transition-duration: 300ms;
+          text-decoration: none;
+          padding: 5px 15px;
+          border-radius: 5px;
+          color: black;
+          background-color: rgb(219, 226, 10);
+          transition-duration: 300ms;
         }
         .button-to:hover{
-            background-color: rgb(160, 165, 15);
+          background-color: rgb(160, 165, 15);
+        }
+        .section-container{
+          padding: 0 15vw;
+        }
+        .top-container{
+          display: flex;
+          align-items: center;
+          margin-bottom: 50px;
+        }
+        .mid-container{
+          margin-bottom: 20px;
+        
+        }
+        .img-pers{
+          width: 300px;
+          height: 400px;
+          object-fit: cover;
+          border-radius: 20px;
+          margin-right: 80px;
+        }
+        section{
+          margin-bottom: 100px;
+        }
+        h1{
+          margin-bottom: 40px;
+          font-weight: 600;
+        }
+        h2{
+          margin-bottom: 20px;
+        }
+        .accordion-button{
+          font-weight: 600;
         }
     </style>
 </head>
-<body style="position: relative; padding-bottom: 100px;">
-    <nav class="navbar" style="background-color: #810000;">
+<body style="position: relative;">
+    <nav class="navbar" style="background-color: #810000; z-index: 50;">
         <a href="#" class="navbar-logo">PresidenKu</a>
        <div class="navbar-nav">
-        <a href="/">back to home</a>
+        <a href="/" style="text-decoration: none;">back to home</a>
        </div>
     </nav>
     
-    <main class="d-flex flex-row" style="height: 170;">
-        <div class="w-50 bg-red" style="height: 3500px;">
-        </div>
-        <div  style=" padding-top: 100px; padding-left: 50px;">
-            <h1 class="mt-5 fw-bold" id="page2title">List of Indonesia's President</h1>
-            <div class="container">
-                <div class="row my-5  py-5">
-                    <div class="w-50">
-                        <h2 class="fw-bold fs-1 text-danger" class="fw-bold fs-4">01</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://th.bing.com/th?id=OIP.KjVER9zYSAVQHaYE4UOGJgHaKD&w=214&h=291&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="">
-                        <p class="fw-bold fs-4">Dr. (H.C.) Ir. H. Soekarno</p>
-                        <p class="text-secondary">Presiden pertama Republik Indonesia yang menjabat pada kurun waktu 1945–1967. Ia adalah seorang tokoh perjuangan yang berperan penting dalam memerdekakan bangsa Indonesia dari kolonialisme Belanda. Bersama Mohammad Hatta, ia memproklamasikan Kemerdekaan Indonesia pada tanggal 17 Agustus 1945.</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Soekarno" class="button-to">Visit</a>
+    <main style=" padding-top: 200px;">
+      <section class=" w-100 section-container" >
+          <div class="top-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/440px-Presiden_Sukarno.jpg" alt="" class="img-pers">
+            <div>
+              <h1>01. Dr. (H.C.) Ir. H. Soekarno</h2>
+              <p class="text-secondary">Dr. (H.C.) Ir. H. Soekarno[cat.] (Ejaan Republik: Sukarno, Jawa: ꦯꦸꦑꦂꦟ; pengucapan bahasa Jawa: [suːˈkarnɔ]) (6 Juni 1901 – 21 Juni 1970) adalah Presiden pertama Republik Indonesia yang menjabat pada kurun waktu 1945–1967. Ia adalah seorang tokoh perjuangan yang berperan penting dalam memerdekakan bangsa Indonesia dari kolonialisme Belanda. Bersama Mohammad Hatta, ia memproklamasikan Kemerdekaan Indonesia pada tanggal 17 Agustus 1945. Soekarno orang pertama yang mencetuskan konsep mengenai Pancasila sebagai dasar negara Indonesia dan ia sendiri yang menamainya. Soekarno menandatangani Surat Perintah 11 Maret 1966 (Supersemar) yang kontroversial, isinya —berdasarkan versi yang dikeluarkan Markas Besar Angkatan Darat— menugaskan Letnan Jenderal Soeharto untuk mengamankan dan menjaga keamanan negara dan institusi kepresidenan. Supersemar menjadi dasar Letnan Jenderal Soeharto untuk membubarkan Partai Komunis Indonesia (PKI) dan mengganti anggota-anggotanya yang duduk di parlemen.[8] Setelah pertanggungjawabannya ditolak Majelis Permusyawaratan Rakyat Sementara (MPRS) pada sidang umum ke empat tahun 1967, Soekarno diberhentikan dari jabatannya sebagai presiden pada Sidang Istimewa MPRS pada tahun yang sama dan Soeharto menggantikannya sebagai pejabat Presiden Republik Indonesia.</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Meninggal</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                      Koesno Sosrodihardjo 6 Juni 1901 Soerabaja, Hindia Belanda (sekarang Surabaya, Indonesia)
                     </div>
-                    <div class="w-50">
-                        <h2 class="fw-bold fs-1 text-danger">02</h2>                        
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src='https://th.bing.com/th?id=ODL.e79eeefe6a1c8d6935ee6b52b1077b91&w=145&h=186&c=10&rs=1&qlt=99&o=6&dpr=1.5&pid=13.1'' alt="">
-                        <p class="fw-bold fs-4">Jenderal Besar TNI (Purn.) H. M. Soeharto</p>
-                        <p class="text-secondary">Presiden kedua Indonesia yang menjabat dari tahun 1967-1998, menggantikan Soekarno. Di dunia internasional, terutama di barat, Soeharto sering dirujuk dengan sebutan populer "The Smiling General" (bahasa Indonesia: "Sang Jenderal yang Tersenyum") karena raut mukanya yang senantiasa tersenyum dan menunjukkan keramahan.</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Soeharto" class="button-to">Visit</a>
-                    </div>
+                  </div>
                 </div>
-                <div class="row my-5  py-5">
-                    <div class="w-50">
-                        <h2 class="fw-bold fs-1 text-danger">03</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://3.bp.blogspot.com/-DBRF6QybrRs/T-myT8mBmMI/AAAAAAAAAFA/-v20Zlm50S8/s1600/79FOTO+HAL+16+NAMA+DAN+PERISTIWA+BJ+Habibie.jpg" alt="">
-                        <p class="fw-bold fs-4">B.J. Habibie</p>
-                        <p class="text-secondary">Presiden Republik Indonesia yang ketiga. Sebelumnya, B.J. Habibie menjabat sebagai Wakil Presiden Republik Indonesia ke-7, menggantikan Try Sutrisno. B. J. Habibie menggantikan Soeharto yang mengundurkan diri dari jabatan presiden pada tanggal 21 Mei 1998. Sebelum memasuki dunia politik, Habibie dikenal luas sebagai seorang profesor dan ilmuwan dalam teknologi aviasi internasional</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/B._J._Habibie" class="button-to">Visit</a>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                      21 Juni 1970 (umur 69) Wisma Yaso, Jakarta, Indonesia
                     </div>
-                    <div class="w-50">
-                        <h2 class="fw-bold fs-1 text-danger">04</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://th.bing.com/th?id=ODL.66090f2891ff9bcb413e83a6095019b9&w=156&h=193&c=10&rs=1&qlt=99&o=6&dpr=1.5&pid=13.1" alt="">
-                        <p class="fw-bold fs-4">Dr. (H.C.) K.H. Abdurrahman Wahid</p>
-                        <p class="text-secondary">tokoh Muslim dan politisi Indonesia yang menjadi Presiden keempat Indonesia dari tahun 1999 hingga 2001. Ia dipilih oleh Majelis Permusyawaratan Rakyat (MPR) hasil Pemilu 1999. Penyelenggaraan pemerintahannya dibantu oleh Kabinet Persatuan Nasional. Masa kepresidenan Abdurrahman Wahid dimulai pada 20 Oktober 1999 dan berakhir pada Sidang Istimewa MPR pada tahun 2001.</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Abdurrahman_Wahid" class="button-to">Visit</a>
-                    </div>
+                  </div>
                 </div>
-                <div class="row my-5 py-5">
-                    <div class="w-50 ">
-                        <h2 class="fw-bold fs-1 text-danger">05</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://th.bing.com/th?id=OIP.ibwaH1oy8j5azqGyEAheNAHaIN&w=237&h=263&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="">
-                        <p class="fw-bold fs-4">Prof. Dr. (H.C.) Hj. Diah Permata Megawati Setiawati Soekarnoputri</p>
-                        <p class="text-secondary">Presiden Indonesia yang kelima yang menjabat sejak 23 Juli 2001 sampai 20 Oktober 2004. Ia merupakan presiden wanita Indonesia pertama dan putri dari presiden Indonesia pertama, Soekarno, yang kemudian mengikuti jejak ayahnya menjadi Presiden Indonesia. Ia menjadi presiden setelah MPR mengadakan Sidang Istimewa MPR pada tahun 2001. Sidang Istimewa MPR ini diadakan dalam menanggapi langkah Presiden Abdurrahman Wahid</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Megawati_Soekarnoputri" class="button-to">Visit</a>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3">
+                    <div class="card card-body">
+                      Soekemi Sosrodihardjo Ida Ayu Nyoman Rai
                     </div>
-                    <div class="w-50">
-                        <h2 class="fw-bold fs-1 text-danger">06</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://3.bp.blogspot.com/-Rd5RtJZ6b74/Uaba1oEUIRI/AAAAAAAAAF8/UYKqk46Ydv8/s1600/sby_reuters1.jpg" alt="">
-                        <p class="fw-bold fs-4">Prof. Dr. H. Susilo Bambang Yudhoyono, M.A.</p>
-                        <p class="text-secondary"> Presiden Indonesia keenam yang menjabat sejak 20 Oktober 2004 sampai 20 Oktober 2014. Ia merupakan Presiden pertama di era Reformasi yang terpilih melalui Pemilihan Umum secara langsung. SBY bersama Wakil Presiden Muhammad Jusuf Kalla, terpilih dalam Pemilu Presiden 2004. Ia berhasil melanjutkan pemerintahannya untuk periode kedua dengan kembali memenangkan Pemilu Presiden 2009, kali ini bersama Wakil Presiden Boediono.</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Susilo_Bambang_Yudhoyono" class="button-to">Visit</a>
-                    </div>
+                  </div>
                 </div>
-                <div class="row my-5 py-5">
-                    <div class="w-50 ">
-                        <h2 class="fw-bold fs-1 text-danger">07</h2>
-                        <img class="w-50 h-50" style="border-radius: 10px; object-fit: cover;" src="https://4.bp.blogspot.com/-3IE4v__pe3c/VczpOONygvI/AAAAAAAAFy0/tSsxQG8xThY/s1600/Presiden_Indonesia_Jokowi.jpg" alt="">
-                        <p class="fw-bold fs-4">Ir. H. Joko Widodo</p>
-                        <p class="text-secondary"> presiden Indonesia yang mulai menjabat sejak tanggal 20 Oktober 2014. Terpilih dalam Pemilu Presiden 2014, Jokowi menjadi presiden Indonesia pertama yang bukan berasal dari elite politik atau militer Indonesia. Dia terpilih bersama Wakil Presiden Jusuf Kalla dan kembali terpilih bersama Wakil Presiden Ma'ruf Amin dalam Pemilu Presiden 2019. Sebelumnya, Jokowi pernah menjabat sebagai gubernur Jakarta sejak 15 Oktober 2012 hingga 16 Oktober 2014 didampingi Basuki Tjahaja Purnama sebagai wakil gubernur. Sebelumnya, ia adalah wali kota Surakarta, sejak tanggal 28 Juli 2005 hingga 1 Oktober 2012</p>
-                        <a type="button" href="https://id.wikipedia.org/wiki/Joko_Widodo" class="button-to">Visit</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOn-0" aria-expanded="true" aria-controls="collapseOn-0">
+                    Proklamator
+                  </button>
+                </h2>
+                <div id="collapseOn-0" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Prestasi terbaik yang bisa diberikan oleh seorang Soekarno untuk bangsa Indonesia adalah Kemerdekaan. Karena tanpa kemerdekaan,tidak ada hal lain yang lebih berarti. Soekarno sebagai Proklamator Kemerdekaan Republik Indonesia, bersama Mohammad Hatta telah menyatakan pada dunia internasionak kemerdekaan Indonesia dan meletakkan dasar-dasar Negara Indonesia pada tanggal 17 Agustus 1945. Dengan tindakannya ini, duet Soekarno Hatta telah mendatangkan pengakuan atas eksistensi Indonesia di mata negara lain di dunia. Proklamasi juga memberikan semangat juang pantang menyerah pemuda-pemudi Indonesia untuk mempertahankan kemerdekaan. Bahkan mereka rela memberikan nyawanya untuk mempertahankan kemerdekaan tersebut.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-0" aria-expanded="false" aria-controls="collapseTwo-0">
+                    Pencetus Pancasila
+                  </button>
+                </h2>
+                <div id="collapseTwo-0" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sebelum memproklamirkan kemerdekaan Indonesia, Di depan sidang BPUPKI, Soekarno telah menyampaikan visi tentang falsafah dan dasar Negara pada 1 Juni 1945. Tanggal ini kemudian ditetapkan sebagai Hari Lahir Pancasila meski masih menyimpan kontroversi.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThre-0" aria-expanded="false" aria-controls="collapseThre-0">
+                    Merebut Papua Barat
+                  </button>
+                </h2>
+                <div id="collapseThre-0" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Nah, pada tanggal 19 Desember 1961 sebagai Presiden, Pak Bro Soekarno punya pengumuman penting atas pelaksanaan Trikora di Alun-Alun Utara Yogyakarta. Lalu dibentuklah Komando Mandala dengan Mayjen Soeharto sebagai Panglima. Tugasnya adalah merencanakan, mempersiapkan, dan menyelenggarakan operasi militer demi mempertahankan dan menggabungkan Papua bagian barat jadi satu kesatuan dengan Indonesia.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/President_Suharto%2C_1993.jpg/440px-President_Suharto%2C_1993.jpg" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">02. Jenderal Besar TNI (Purn.) H. M. Soeharto</h2>
+              <p> Presiden kedua Indonesia yang menjabat dari tahun 1967 sampai 1998, menggantikan Soekarno. Di dunia internasional, terutama di Dunia Barat, Soeharto sering dirujuk dengan sebutan populer "The Smiling General" (bahasa Indonesia: "Sang Jenderal yang Tersenyum") karena raut mukanya yang senantiasa tersenyum dan menunjukkan keramahan. Meski begitu, dengan berbagai kontroversi yang terjadi, ia sering juga disebut sebagai otoriter bagi yang berseberangan dengannya.</p>
+              <p>Sebelum menjadi presiden, Soeharto adalah pemimpin militer pada masa Hindia Belanda dan Kekaisaran Jepang, dengan pangkat terakhir Mayor Jenderal. Setelah Gerakan 30 September 1965, Soeharto kemudian melakukan operasi penertiban dan pengamanan atas perintah dari Presiden Soekarno, salah satu yang dilakukannya adalah dengan menumpas Gerakan 30 September dan menyatakan bahwa PKI sebagai organisasi terlarang. Berbagai kontroversi menyebut operasi ini menewaskan sekitar 100.000 hingga 2 juta jiwa, namun jumlah ini patut dipertanyakan karena korban dari Gerakan 30 September juga banyak</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1=1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1=1">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-1" aria-expanded="false" aria-controls="multiCollapseExample2-1">Meninggal</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-1" aria-expanded="false" aria-controls="multiCollapseExample3-1">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1=1">
+                    <div class="card card-body">
+                      8 Juni 1921 Kemusuk, Kesultanan Ngayogyakarta Hadiningrat, Hindia Belanda                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2-1">
+                    <div class="card card-body">
+                      27 Januari 2008 (umur 86) Jakarta Selatan, Jakarta, Indonesia
                     </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-1">
+                    <div class="card card-body">
+                      Kertosoediro (ayah) Soekirah (ibu)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-1" aria-expanded="true" aria-controls="collapseOne-1">
+                    Swasembada pangan
+                  </button>
+                </h2>
+                <div id="collapseOne-1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Soeharto membangkitkan Indonesia dari keterpurukan ekonomi dari peninggalan pemerintahan orde lama. Pada tahun 1967, Indonesia punya utang luar negeri sebesar 700 juta dolar AS, dan Soeharto dibantu para pakar ekonomi, terutama Soemitro Djojohadikoesoemo, yang merupakan ayah Prabowo Subianto. Soeharto membalikkan keadaan yang berpuncak pada swasembada pangan pada 1984. Tahun 1984, misalnya, Indonesia meraih swasembada pangan yang membuat Soeharto mendapat kehormatan berpidato dalam Konferensi ke-23 Food and Agriculture Organization (FAO) di Roma, Italia, pada 14 November 1985. Soeharto juga memberikan bantuan 100.000 ton padi untuk korban kelaparan di Afrika.                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-1" aria-expanded="false" aria-controls="collapseTwo-1">
+                    Dolar Seharga Rp 378
+                  </button>
+                </h2>
+                <div id="collapseTwo-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Kriminalisme di era sekarang ini sudah sangat miris. Hal ini jelas berbanding terbalik dengan zaman Soeharto dulu. Masih ingat petrus? Ya, ini adalah salah satu cara Soeharto untuk memberantas kejahatan. Teringat dulu banyak cerita orang-orang yang pernah menjumpai mayat-mayat di sungai-sungai atau jalan. Setelah diidentifikasi ternyata si mayat ini pernah melakukan kejahatan, entah mencuri, merampok, begal dan sejenisnya. Hal ini pun sangat efektif menekan angka kejahatan ke level yang sangat rendah. Soal kerukunan umat beragama juga jadi hal yang sepertinya cuma terjadi di zaman Soeharto. Dulu masyarakat begitu rukun hidup bertetangga antara satu dan lainnya. TNI dan rakyat juga sangat berbaur untuk menciptakan lingkungan kondusif. Benar-benar sangat nyaman dan aman.                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-1" aria-expanded="false" aria-controls="collapseThree-1">
+                    Semua harga kebutuhan relatif murah
+                  </button>
+                </h2>
+                <div id="collapseThree-1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Apa yang bisa kita beli dengan uang Rp 50 ribu sekarang ini? Tak banyak. Bahkan beli pulsa atau paket internet saja rasanya masih kurang. Dibelanjakan untuk urusan rumah tangga uang Rp 50 ribu juga tak banyak nilainya sekarang. Dibandingkan dulu, dengan sejumlah uang ini kita bisa membeli apa pun. Mulai kebutuhan sebulan ke depan sampai cicilan mobil atau rumah.  Tak hanya harga-harga barang, biaya pendidikan juga sangat murah. Dulu sekolah-sekolah mematok tarif yang sangat terjangkau, bahkan sampai tingkat universitas. Mungkin yang lahir tahun 90an ke bawah merasakan enaknya bayar SPPcuma Rp 1.000 atau Rp 2.000 saja. Kalau dibandingkan dengan hari ini tentu sangat jauh. Tak perlu bicara biaya kuliah, taman kanak-kanak saja sudah dipatok ratusan ribu rupiah, apalagi yang labelnya ‘standar internasional’. Biaya berobat juga sangat terjangkau. Rumah sakit mematok biaya yang murah, dan untuk PNS, TNI, dan Polri biasanya juga ada semacam kartu asuransi kesehatan sehingga bisa gratis berobat. Makanya orang dulu sehat-sehat karena tidak ngenes memikirkan biaya yang bakal dikeluarkan nantinya.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/B._J._Habibie%2C_President_of_Indonesia_portrait.jpg/440px-B._J._Habibie%2C_President_of_Indonesia_portrait.jpg" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">03. Prof. Dr.-Ing. Ir. H. Bacharuddin Jusuf Habibie, FREng</h2>
+              <p>Prof. Dr.-Ing. Ir. H. Bacharuddin Jusuf Habibie, FREng.[1] (25 Juni 1936 – 11 September 2019)[2] adalah Presiden Republik Indonesia yang ketiga. Sebelumnya, B.J. Habibie menjabat sebagai Wakil Presiden Republik Indonesia ke-7, menggantikan Try Sutrisno. B. J. Habibie menggantikan Soeharto yang mengundurkan diri dari jabatan presiden pada tanggal 21 Mei 1998.[3][4] Sebelum memasuki dunia politik, Habibie dikenal luas sebagai seorang profesor dan ilmuwan dalam teknologi aviasi internasional dan satu-satunya presiden Indonesia hingga saat ini yang berlatarbelakang teknokrat.</p>
+              <p>B.J. Habibie kemudian digantikan oleh Abdurrahman Wahid[5] (Gus Dur) yang terpilih sebagai presiden pada 20 Oktober 1999 oleh MPR hasil Pemilu 1999. Dengan menjabat selama 2 bulan dan 7 hari (sebagai wakil presiden) dan juga selama 1 tahun dan 5 bulan (sebagai presiden), B. J. Habibie merupakan Wakil Presiden dan juga Presiden Indonesia dengan masa jabatan terpendek.</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1-2" role="button" aria-expanded="false" aria-controls="multiCollapseExample1-2">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-2" aria-expanded="false" aria-controls="multiCollapseExample2-2">Meninggal</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-2" aria-expanded="false" aria-controls="multiCollapseExample3-2">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1-2">
+                    <div class="card card-body">
+                      25 Juni 1936 Afdeeling Parepare, Celebes, Hindia Belanda                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2-2">
+                    <div class="card card-body">
+                      11 September 2019 (umur 83) Jakarta, Indonesia                    
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-2">
+                    <div class="card card-body">
+                      Alwi Abdul Jalil Habibie Tuti Marini Puspowardojo
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="true" aria-controls="collapseOne-2">
+                    Membuat Pesawat
+                  </button>
+                </h2>
+                <div id="collapseOne-2" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Ilmu yang didapatkan selama menuntut ilmu di Jerman, Habibie pun mendapatkan segudang penghargaan di bidang kedirgantaraan. Kejeniusannya pun melahirkan teori kedirgantaraan. Menjadi engineer di Jerman, ia menggali fenomena keretakan pada konstruksi pesawat. Akhirnya Bapak Demokrasi ini menemukan rumus yang dinamai dengan Faktor Habibie dan diakui oleh dunia penerbangan dan dipakai perusahaan maskapai di dunia. BJ Habibie pun dijuluki sebagai 'Mr Crack' berkat teorinya ini.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-2" aria-expanded="false" aria-controls="collapseTwo-2">
+                    Diangkat menjadi wakil direktur perusahaan penerbangan Jerman
+                  </button>
+                </h2>
+                <div id="collapseTwo-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Berada di negeri rantau ternyata membuka jalan karier bagi Habibie. Setelah menamatkan gelar diploma, beliau bekerja di Firma Talbot yang merupakan perusahaan kereta api. Pada perusahaan tersebut Habibie mendesain kereta untuk mengangkut barang dalam jumlah besar. Rancangannya dituntaskan menggunakan teknologi konstruksi sayap pesawat. Kariernya berlanjut setelah menyabet gelar doktor. Habibie mendapat pekerjaan di sebuah perusahaan penerbangan Messerschmitt-Bolkow-Blohm (MBB). Di perusahaan tersebut, Habibie pernah menduduki dua jabatan sekaligus, yakni Direktur Teknologi dan Vice President MBB.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-2" aria-expanded="false" aria-controls="collapseThree-2">
+                    Raih sejumlah penghargaan internasional berkat jasanya pada dunia dirgantara
+                  </button>
+                </h2>
+                <div id="collapseThree-2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Berkat sumbangsih di bidang dirgantara Habibie memperoleh sejumlah penghargaan. Kesuksesan merumuskan Faktor Habibie membuatnya menerima penghargaan Edward Warner Award dan Award von Karman. Penghargaan tersebut setara dengan hadiah Nobel. Tak hanya dari luar negeri, penghargaan juga datang dari dalam negeri salah satunya diberikan oleh ITB. Kampus tempat beliau menimba ilmu tersebut memberi penghargaan tertinggi yaitu Ganesha Praja Manggala Bhakti Kencana. Pemerintah Jerman juga tak ketinggalan memberi apresiasi berupa dua penghargaan yakni Das Grosse Verdientkreuz dan Das Grosse Verdenstkreuz Mit Stern und Schulterband.                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/President_Abdurrahman_Wahid_-_Indonesia.jpg/440px-President_Abdurrahman_Wahid_-_Indonesia.jpg" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">04. Dr. (H.C.) K.H. Abdurrahman Wahid</h2>
+              <p>Dr. (H.C.) K.H. Abdurrahman Wahid (lahir dengan nama Abdurrahman ad-Dakhil; 7 September 1940 – 30 Desember 2009), atau yang akrab disapa Gus Dur,[1] adalah tokoh Muslim dan politisi Indonesia yang menjadi Presiden keempat Indonesia dari tahun 1999 hingga 2001. Ia menggantikan Presiden B. J. Habibie setelah dipilih oleh Majelis Permusyawaratan Rakyat (MPR) hasil Pemilu 1999. Penyelenggaraan</p>
+              <p>pemerintahannya dibantu oleh Kabinet Persatuan Nasional. Masa kepresidenan Abdurrahman Wahid dimulai pada 20 Oktober 1999 dan berakhir pada Sidang Istimewa MPR pada tahun 2001. Pada 23 Juli 2001, kepemimpinannya digantikan oleh Megawati Soekarnoputri setelah mandatnya dicabut oleh MPR. Abdurrahman Wahid adalah mantan ketua Tanfidziyah (badan eksekutif) Nahdlatul Ulama dan pendiri Partai Kebangkitan Bangsa (PKB).</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1-3" role="button" aria-expanded="false" aria-controls="multiCollapseExample1-3">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2-3" aria-expanded="false" aria-controls="multiCollapseExample2-3">Meninggal</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-3" aria-expanded="false" aria-controls="multiCollapseExample3-3">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1-3">
+                    <div class="card card-body">
+                      Abdurrahman ad-Dakhil 7 September 1940 Jombang, Hindia Belanda                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2-3">
+                    <div class="card card-body">
+                      30 Desember 2009 (umur 69) Jakarta Pusat, Jakarta, Indonesia                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-3">
+                    <div class="card card-body">
+                      Wahid Hasyim, Siti Sholehah
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-3" aria-expanded="true" aria-controls="collapseOne-3">
+                    Jadikan tahun baru Imlek hari libur
+                  </button>
+                </h2>
+                <div id="collapseOne-3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Berlanjut ke masa kemerdekaan. Imlek tetap dapat dirayakan secara bebas di tanah air selama masa pemerintahan Presiden Sukarno. Pada masa Orde Baru, perayaan Imlek mulai dibatasi meskipun tidak sama sekali dilarang. Alasannya berdasarkan Instruksi Presiden (Inpres) No. 14 Tahun 1967. Beliau melakukan hal itu tersebut dengan mengeluarkan Keputusan Presiden (Keppres) No. 6 Tahun 2000. Bersamaan dengan itu, Gus Dur juga kemudian menjadikan Imlek sebagai hari libur fakultatif (berlaku bagi mereka yang merayakannya).                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-3" aria-expanded="false" aria-controls="collapseTwo-3">
+                    Jadikan Kong Hu Cu agama yang diakui
+                  </button>
+                </h2>
+                <div id="collapseTwo-3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Di era Gus Dur, jumlah agama yang diakui di Indonesia berubah dari lima menjadi 6, bertambah agama Kong Hu Cu. Sebelumnya selama puluhan tahun, penganut Kong Hu Cu tak bisa sepenuhnya mengklaim hak-hak mereka sebagai warga negara Indonesia, karena agamanya tak diakui.  Sebagaimana perayaan Imlek, diskriminasi terhadap agama Kong Hu Cu juga diawali di masa Orde Baru dengan terbitnya Inpres No. 14 Tahun 1967. Ini merupakan representasi betapa Gus Dur tidak menyetujui diskriminasi terhadap kaum Tionghoa di Indonesia.                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-3" aria-expanded="false" aria-controls="collapseThree-3">
+                    Berusaha menghapus diskriminasi terhadap PKI
+                  </button>
+                </h2>
+                <div id="collapseThree-3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Setelah mengalami diskriminasi sosial, politik, hingga ekonomi di bawah rezim Orde Baru, mereka yang terkait dengan gerakan Partai Komunis Indonesia (PKI) di masa lalu, akhirnya memperoleh angin segar saat Gus Dur menjadi presiden. Meski menghadapi tentangan yang tak sedikit, Gus Dur dengan berani mengusulkan pencabutan Ketetapan MPRS No. 25 tahun 1966, salah satu landasan legal proses diskriminasi tersebut. Ketetapan MPRS tersebut berisikan larangan penyebaran paham komunisme di Indonesia. Namun, bukan berarti Gus Dur menutup mata bahwa sikap dan tindakan PKI juga tak selalu benar.                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Megawati_Sukarnoputri_official_portrait.jpg/440px-Megawati_Sukarnoputri_official_portrait.jpg" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">05. Prof. Dr. (H.C.)[2] Hj. Diah Permata Megawati Setiawati Soekarnoputri </h2>
+              <p>Prof. Dr. (H.C.)[2] Hj. Diah Permata Megawati Setiawati Soekarnoputri (lahir 23 Januari 1947) adalah Presiden Indonesia yang kelima yang menjabat sejak 23 Juli 2001 sampai 20 Oktober 2004. Ia merupakan presiden wanita Indonesia pertama dan putri dari presiden Indonesia pertama, Soekarno, yang kemudian mengikuti jejak ayahnya menjadi Presiden Indonesia. Pada 20 September 2004, ia kalah suara dari Susilo Bambang Yudhoyono dalam Pemilu Presiden 2004 putaran yang kedua.</p>
+              <p>Ia menjadi presiden setelah MPR mengadakan Sidang Istimewa MPR pada tahun 2001. Sidang Istimewa MPR ini diadakan dalam menanggapi langkah Presiden Abdurrahman Wahid (Gus Dur) yang membekukan lembaga MPR/DPR dan Partai Golkar. Ia dilantik pada 23 Juli 2001. Sebelumnya dari tahun 1999–2001, ia menjabat Wakil Presiden pada pemerintahan Presiden Abdurrahman Wahid (Gus Dur).</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1-4" role="button" aria-expanded="false" aria-controls="multiCollapseExample1-4">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-4" aria-expanded="false" aria-controls="multiCollapseExample3-4">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1-4">
+                    <div class="card card-body">
+                      Diah Permata Megawati Setiawati Soekarnoputri 23 Januari 1947 (umur 76)Yogyakarta, Indonesia                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-4">
+                    <div class="card card-body">
+                      Soekarno dan Fatmawati
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bot">
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-4" aria-expanded="true" aria-controls="collapseOne-4">
+                    Stabilisasi Kondisi Politik, Hukum, dan Keamanan (Polhukam)
+                  </button>
+                </h2>
+                <div id="collapseOne-4" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Megawati berhasil menstabilkan kondisi Polhukam Indonesia yang sempat bergejolak pasca-reformasi. Ia mengambil langkah-langkah penting untuk memulihkan kepercayaan publik terhadap pemerintah dan menguatkan institusi demokrasi. Stabilitas ini penting untuk memungkinkan pembangunan ekonomi dan sosial berkelanjutan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-4" aria-expanded="false" aria-controls="collapseTwo-4">
+                    Pemberantasan Korupsi
+                  </button>
+                </h2>
+                <div id="collapseTwo-4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Di bawah kepemimpinan Megawati, Indonesia mendirikan Komisi Pemberantasan Korupsi (KPK) pada tahun 2002. KPK menjadi lembaga independen yang berwenang untuk menyelidiki dan menuntut kasus korupsi, yang merupakan langkah besar dalam upaya memerangi korupsi di Indonesia. Pendirian KPK menandai komitmen serius pemerintah dalam mengatasi masalah korupsi yang telah lama menjadi hambatan bagi perkembangan negara. 
+                  </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-4" aria-expanded="false" aria-controls="collapseThree-4">
+                    Pemulihan Sektor Perbankan
+                  </button>
+                </h2>
+                <div id="collapseThree-4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Setelah krisis moneter Asia 1997-1998, Megawati mengambil langkah-langkah untuk memperbaiki sistem perbankan Indonesia yang rusak. Upaya ini termasuk restrukturisasi hutang dan reformasi kebijakan perbankan. Pada akhir masa jabatannya, sektor perbankan telah stabil dan mulai menunjukkan pertumbuhan positif, yang merupakan dasar penting untuk pemulihan ekonomi nasional.  
+                  </div>
                 </div>
             </div>
-        </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Susilo_Bambang_Yudhoyono_2009_official_portrait.png/440px-Susilo_Bambang_Yudhoyono_2009_official_portrait.png" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">06. Jenderal TNI (HOR) (Purn.) Prof. Dr. H. Susilo Bambang Yudhoyono, M.A.</h2>
+              <p>Jenderal TNI (HOR) (Purn.) Prof. Dr. H. Susilo Bambang Yudhoyono, M.A. (lahir 9 September 1949), atau lebih dikenal dengan inisialnya SBY adalah Presiden Indonesia keenam yang menjabat sejak 20 Oktober 2004 sampai 20 Oktober 2014. Ia merupakan Presiden pertama di era Reformasi yang terpilih melalui Pemilihan Umum secara langsung. SBY bersama Wakil Presiden Muhammad Jusuf Kalla, terpilih dalam Pemilu Presiden 2004.[2][3] Ia berhasil melanjutkan pemerintahannya untuk periode kedua dengan kembali memenangkan Pemilu Presiden 2009, kali ini bersama Wakil Presiden Boediono. Sejak era Reformasi dimulai, Susilo Bambang Yudhoyono merupakan Presiden Indonesia pertama yang menyelesaikan masa jabatan selama 5 tahun dan berhasil terpilih kembali untuk periode kedua.</p>
+              <p>Yudhoyono, yang dipanggil "Sus" oleh orang tuanya dan populer dengan panggilan "SBY",[4] melewatkan sebagian masa kecil dan remajanya di Pacitan. Ia merupakan seorang purnawirawan militer. Selama di militer ia lebih dikenal sebagai Bambang Yudhoyono. Karier militernya selesai ketika ia diangkat oleh Presiden Abdurrahman Wahid sebagai Menteri Pertambangan dan Energi pada tahun 1999, dan menjadi salah satu pendiri Partai Demokrat.[5] Pangkat terakhir Susilo Bambang Yudhoyono adalah Jenderal TNI sebelum pensiun pada 25 September 2000. Pada Pemilu Presiden 2004, keunggulan suaranya dari Presiden petahana Megawati Soekarnoputri membuatnya menjadi presiden pertama yang terpilih melalui pemilihan langsung oleh rakyat Indonesia. Hal ini dimungkinkan setelah amendemen UUD 1945.</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1-5" role="button" aria-expanded="false" aria-controls="multiCollapseExample1-5">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-5" aria-expanded="false" aria-controls="multiCollapseExample3-5">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1-5">
+                    <div class="card card-body">
+                      9 September 1949 (umur 74) Tremas, Arjosari, Pacitan, Jawa Timur, Indonesia                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-5">
+                    <div class="card card-body">
+                      	Soekotjo (ayah), Siti Habibah (ibu)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bot">
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-5" aria-expanded="true" aria-controls="collapseOne-5">
+                    keberhasilan meningkatkan korupsi dan memenjarakan para pentolan partai politik pendukungnya.
+                  </button>
+                </h2>
+                <div id="collapseOne-5" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                     Pada masa ini tampak sekali 40 persen ketua parpol melakukan korupsi seperti Anas Urbaningrum dan Luthfi Hasan Ishaaq dan Suryadharma Ali. Selain itu kekuasaan dibagikan dan disalahgunakan oleh para menteri SBY: Andi Mallarangeng, SDA, Jero Wacik, Dahlan Iskan, dll yang menjadi pesakitan dalam politik ekonomi berbagi ala SBY.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-5" aria-expanded="false" aria-controls="collapseTwo-5">
+                    keberhasilan menghasilkan calon presiden yang tak dijual ke partai lain.
+                  </button>
+                </h2>
+                <div id="collapseTwo-5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Ini kelicikan luar biasa. Para kandidat capres disuruh kampanye demi nama Partai Demokrat dengan biaya sendiri. SBY mendomplengkan PD dalam konvensi capres ala SBY. Menjelang pilpres 2014, untuk mendongkrak Demokrat yang hancur karena korupsi para pentolannya, Anas, Andi, Angie, Hartati Murdaya Poo,Sutan, mengadakan konvensi menjaring capres. Hasilnya, pemenangnya Dahlan Iskan tidak diajukan baik sebagai capres maupun cawapres. Padahal semua calon capres yang dijaring mengeluarkan uang bernilai puluhan miliaran untuk berbagai kampanye. Gagal total karena nama buruk.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-5" aria-expanded="false" aria-controls="collapseThree-5">
+                    keberhasilan menumpuk hutang untuk subsidi BBM. 
+                  </button>
+                </h2>
+                <div id="collapseThree-5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Memasuki masa kekuasaan 2004-2009, kondisi politik cukup normal di permukaan. Yang ada adalah memberi rakyat gambaran kondisi ekonomi, politik, sosial yang normal. Ini ditandai dengan serangkaian pemboman dan terorisme yang menjadi isu yang bisa digiring ke kanan-kiri untuk memainkan emosi rakyat. Ekonomi subsidi menjadi panglima dan dijadikan alat penggambaran keberhasilan ekonomi, dnegan menumpuk hutang untuk subsidi BBM.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class=" w-100 section-container" >
+          <div class="top-container text-secondary">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Joko_Widodo_2019_official_portrait.jpg/440px-Joko_Widodo_2019_official_portrait.jpg" alt="" class="img-pers">
+            <div>
+              <h1 class="text-dark">07. Ir. H. Joko Widodo</h2>
+              <p>Ir. H. Joko Widodo (pelafalan dalam bahasa Indonesia: [dʒɔkɔ widɔdɔ]; lahir 21 Juni 1961) adalah presiden Indonesia yang mulai menjabat sejak tanggal 20 Oktober 2014. Terpilih dalam Pemilu Presiden 2014, Jokowi menjadi presiden Indonesia pertama yang bukan berasal dari elite politik atau militer Indonesia. Dia terpilih bersama Wakil Presiden Jusuf Kalla dan kembali terpilih bersama Wakil Presiden Ma'ruf Amin dalam Pemilu Presiden 2019. Sebelumnya, Jokowi pernah menjabat sebagai gubernur Jakarta sejak 15 Oktober 2012 hingga 16 Oktober 2014 didampingi Basuki Tjahaja Purnama sebagai wakil gubernur. Sebelumnya, ia adalah wali kota Surakarta, sejak tanggal 28 Juli 2005 hingga 1 Oktober 2012, didampingi F.X. Hadi Rudyatmo sebagai wakil wali kota.[7] Dua tahun menjalani periode keduanya menjadi wali kota Surakarta, Jokowi ditunjuk oleh partainya, Partai Demokrasi Indonesia Perjuangan (PDI-P), untuk bersaing dalam Pilkada DKI Jakarta 2012 berpasangan dengan Basuki Tjahaja Purnama.</p>
+            </div>
+          </div>
+          <div class="mid-container">
+            <h2>Biodata</h2>
+            <div>
+              <p class="d-inline-flex gap-1">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1-6" role="button" aria-expanded="false" aria-controls="multiCollapseExample1-6">Lahir</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3-6" aria-expanded="false" aria-controls="multiCollapseExample3-6">Orang tua</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1-6">
+                    <div class="card card-body">
+                      Mulyono 21 Juni 1961 (umur 62) Surakarta, Jawa Tengah, Indonesia[                  
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample3-6">
+                    <div class="card card-body">
+                      Widjiatno Notomihardjo (ayah), Sudjiatmi (ibu)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bot">
+            <h2 >prestasi</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-6" aria-expanded="true" aria-controls="collapseOne-6">
+                    KASUS COVID-19 MENURUN TAJAM
+                  </button>
+                </h2>
+                <div id="collapseOne-6" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Kebijakan Pemerintah yang memberlakukan Pembatasan Kegiatan Masyarakat (PPKM) pada wilayah Jawa-Bali dan Luar Jawa-Bali sangat berpengaruh Positif dengan turunnya angka kasus Covid-19 di seluruh Wilayah Indonesia. Perkembangan penanganan Covid-19 di Indonesia sudah sangat baik. Pada tingkat nasional, angka capaian pengendalian kasus di Indonesia sangat baik, terlihat dari indikator Laju Penyebaran Kasus (Reproduction Number/Rt) yang ada di bawah 1 (per 30 September 2021 sebesar 0,63), jauh lebih rendah dibandingkan dengan negara lain (Singapura = 1,54; Inggris = 1.05; Filipina = 1,01). Selain itu, Kasus Konfirmasi Harian per 1 juta penduduk di Indonesia sangat rendah yaitu sebesar 6,52 kasus per 1 juta penduduk, jauh lebih rendah dibandingkan negara lain (Inggris = 505,3 kasus; Malaysia = 376,3 kasus; Singapura = 361,4 kasus). 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-6" aria-expanded="false" aria-controls="collapseTwo-6">
+                    PENINGKATAN PENDIDIKAN DAN KESEHATAN NASIONAL
+                  </button>
+                </h2>
+                <div id="collapseTwo-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Keseriusan Presiden Jokowi untuk meningkatkan kualitas pendidikan dengan berkomitmen untuk tetap menjaga anggaran pendidikan dalam APBN  yaitu sebesar Rp 492,5 triliun. Adapun anggaran ini diperuntukan untuk Peningkatan kualitas tenaga pendidik, peningkatan efektivitas dana Bantuan Operasional Sekolah, pembangunan dan perbaikan  sekolah  dan fasilitasnya, pemberian Program Indonesia Pintar dan bantuan pembiayaan beasiswa bidikmisi serta perbaikan tunjangan guru. Selain peningkatan pendidikan, Presiden Jokowi juga menunjukan keseriusannya dalam meningkatkan pelayanan kesehatan terutama dalam kondisi pandemi Covid-19 saat ini. Pada APBN 2019, pemerintah telah mengalokasikan sekitar Rp 123,1 triliun untuk anggaran kesehatan  untuk meningkatkan  kualitas layanan kesehatan. 
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-6" aria-expanded="false" aria-controls="collapseThree-6">
+                    PEMBANGUNAN INFRASTRUKTUR
+                  </button>
+                </h2>
+                <div id="collapseThree-6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Percepatan Pembangunan terutama pembangunan infrastruktur merupakan prioritas Presiden Jokowi. Pembangunan Infrastruktur dibuat secara merata di seluiruh Indonesia seperti contoh pembangunan dan pengembangan Pelabuhan, Pembangunan jalur kereta api, pembuatan jalan trans antar kabupaten bahkan antar provinsi, pembangunan infrastruktur modern MRT dan LRT, pembangunan Bandara sampai didaerah pedalaman. Rencana Pembangunan Infrastruktur megah kedepan yaitu Dua bendungan pecah rekor se Asia Tenggara di Jawa Tengah dan Jawa Timur,  Jembatan Batam Bintan sepanjang 7 Km serta jalan meliuk-liuk Trans Papua sepanjang 3,462 Km yang menghubungkan antara daerah Merauke dan Sorong.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
     </main>
-    <section class="contact" style="position: absolute; bottom: 0px; width: 100%; background-color: #810000;">
+    
+    <section class="contact" style="position: absolute; bottom: -300px; width: 100%; background-color: #810000;">
         <div class="footer text-white">
             <p>
             &copy; 2023. Ucup dan Adli. All Right Reserved.
             </p>
         </div>
     </section>
+
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll("img"));
+        VanillaTilt.init(document.querySelectorAll("img"));      
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
