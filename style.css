@@ -6,6 +6,10 @@
   border: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -90,8 +94,10 @@ body {
   border-radius: 16px;
 }
 
+/* Tentang kami*/
+
 .about {
-  padding: 90px 10% 90px;
+  padding: 85px 5% 90px;
 }
 
 .about-content h2 {
@@ -105,7 +111,7 @@ body {
 
 .about .container {
   display: flex;
-  align-items: center;
+  
 }
 
 .about-img img {
@@ -114,15 +120,61 @@ body {
 }
 
 .about-content {
-  padding: 0 15px;
-  margin-block: 60px;
+  padding: 0 50px;
+  margin-block: 40px;
 }
 
 .about-content p {
   font-size: 15px;
   line-height: 30px;
-  margin-bottom: 10px;
 }
+
+/*funfact */
+
+.funfact {
+  padding: 85px 5% 90px;
+}
+
+.funfact h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.funfact h2 span {
+  color: #d80b0bf2;
+}
+
+.funfact p{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.funfact-img {
+  display: flex;
+  position: relative; 
+}
+
+.funcfact-img .funfact-content {
+  text-align: center;
+}
+
+.funcfact-img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.funcfact-img:hover {
+  transform: scale(1.2);
+}
+
 
 .contact {
   background-color: #810000f2;
